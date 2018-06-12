@@ -12,7 +12,7 @@ embedding_dim=300
 input_length=2400
 n_filters=100
 
-
+#return models
 
 def get_random_model(print_summary=False):
 
