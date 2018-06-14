@@ -67,10 +67,13 @@ $ python3 traintest.py
 ##### Since the Google Word2vec file is too large (1.5GB) I trained a myown word2vec model on a shorter text corpus. The Google model can however be downloaded and used as pretrained weights into the embedding layer.
 
 
-#####  All the hyperparameters mentioned in the paper have been incorporated into the models as such but instead of adadelta optimiser, adam is used. 
+#####  All the hyperparameters mentioned in the paper have been incorporated into the models as such but instead of adadelta optimiser, adam is used. Also instead of using softmax on the penultimate layer,I used sigmoid and tried experimenting with kernel constraints of 
+2,4,8 but got better values if I just used no kernel constraints.
 
 ##### I trained the random model on a kaggle kernel and achieved 80% accuracy on test data after training for like 10 epochs on training data. This is better than 76% accuracy given in the paper.
 
 ## The link to the kaggle kernel is [here](https://www.kaggle.com/harshtiku/convnets-for-sentence-classification)
+
+## The github link to the code is [here](https://github.com/blackeagle01/Sentiment-Analysis-with-CNNs)
 
 
