@@ -30,7 +30,7 @@ def train(modeltype='random',epochs=7,word_embeddings='./samplemodel.bin'):
 		history=model.fit(X_train,Y_train,validation_split=0.1,epochs=epochs)
 
 	elif modeltype=='multi_channel':
-		model=get_pretrained_model(finetune=True,modelpath=word_embeddings)
+		model=get_multichannel_model(modelpath=word_embeddings)
 		model.summary()
 		history=model.fit(X_train,Y_train,validation_split=0.1,epochs=epochs)
 
