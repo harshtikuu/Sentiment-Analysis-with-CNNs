@@ -80,7 +80,9 @@ def get_keras_embedding(modelpath,finetune=False):
 
 
 
-def get_pretrained_model(modelpath='./model.bin',finetune=False,print_summary=False):
+def get_pretrained_model(modelpath='./samplemodel.bin',finetune=False,print_summary=False):
+
+	
 	
 	embedlayer=get_keras_embedding(modelpath,finetune)
 
@@ -122,7 +124,7 @@ def get_pretrained_model(modelpath='./model.bin',finetune=False,print_summary=Fa
 	return model 
 
 
-def get_multichannel_model(modelpath='./model.bin',print_summary=False):
+def get_multichannel_model(modelpath='./samplemodel.bin',print_summary=False):
 
 	embedlayer1=get_keras_embedding(modelpath='./model.bin',finetune=True)
 	embedlayer2=get_keras_embedding(modelpath='./model.bin',finetune=False)

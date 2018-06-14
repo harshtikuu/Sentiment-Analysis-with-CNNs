@@ -2,8 +2,8 @@ import os
 from keras.preprocessing.text import Tokenizer,text_to_word_sequence 
 from gensim.models import Word2Vec
 
-negfilepath='./review_polarity/txt_sentoken/neg/'
-posfilepath='./review_polarity/txt_sentoken/pos/'
+negfilepath='./review_polarity_dataset/txt_sentoken/neg/'
+posfilepath='./review_polarity_dataset/txt_sentoken/pos/'
 
 
 
